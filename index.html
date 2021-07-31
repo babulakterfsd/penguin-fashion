@@ -1,54 +1,569 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en-US">
-   <head>
-      <!-- Initial meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-      <meta name="description" content="A fully responsive e-commerce template built with HTML5, CSS3 and the trending css framework named tailwind css.">
-      <meta name="keywords" content="tailwindcss, tailwindcss html template, responsive website with tailwindcss, front-end development tailwindcss, e-commerce, fashion website, e-commerce html5 template, responsive tailwindcss website">
-      <meta name="author" content="Babul Akter">
-      <meta name="publisher" content="Babul Akter">
-      <meta name="copyright" content="Babul Akter">
-      <meta name="description" content="A fully responsive e-commerce template built with HTML5, CSS3 and the trending css framework named tailwind css.">
-      <meta name="page-topic" content="Media">
-      <meta name="page-type" content="landing page , e-commerce template">
-      <meta name="audience" content="Everyone">
-      <meta name="robots" content="index, follow">
+    <head>
+        <!-- Initial meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+        <meta name="description" content="A fully responsive e-commerce template built with HTML5, CSS3 and the trending css framework named tailwind css." />
+        <meta
+            name="keywords"
+            content="tailwindcss, tailwindcss html template, responsive website with tailwindcss, front-end development tailwindcss, e-commerce, fashion website, e-commerce html5 template, responsive tailwindcss website"
+        />
+        <meta name="author" content="Babul Akter" />
+        <meta name="publisher" content="Babul Akter" />
+        <meta name="copyright" content="Babul Akter" />
+        <meta name="description" content="A fully responsive e-commerce template built with HTML5, CSS3 and the trending css framework named tailwind css." />
+        <meta name="page-topic" content="Media" />
+        <meta name="page-type" content="landing page , e-commerce template" />
+        <meta name="audience" content="Everyone" />
+        <meta name="robots" content="index, follow" />
+        <!-- icons -->
+        <link rel="icon" href="./images/fav.png" />
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/999412a9e6.js" crossorigin="anonymous"></script>
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- tailwind css cdn -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <!-- Main css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Penguin Fasion: Build yourself beautifully</title>
+    </head>
+    <body class="text-gray-600">
+        <!-- Header Starts -->
+        <header id="header" class="header bg-yellow-50">
+            <div class="container mx-auto px-5">
+                <!-- Navbar Starts -->
+                <nav class="flex justify-between items-center lg:px-5 py-5">
+                    <a href="https://babulakterfsd.github.io/penguin-fashion">
+                        <img src="./images/logo.png" alt="Logo" class="w-60 sm:w-70 lg:w-80" />
+                    </a>
+                    <button class="lg:hidden">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="hidden lg:flex space-x-10 text-gray-900">
+                        <li><a class="green-text font-bold hover:text-yellow-300" href="#">Home</a></li>
+                        <li><a class="green-text font-bold hover:text-yellow-300" href="#">Product</a></li>
+                        <li><a class="green-text font-bold hover:text-yellow-300" href="#">About us</a></li>
+                        <li><a class="green-text font-bold hover:text-yellow-300" href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+                <!-- Navbar Ends-->
+                <!-- Banner Area Start Here -->
+                <section id="banner-area" class="py-10 sm:pb-20">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 items-center">
+                        <!-- Banner info part -->
+                        <div class="animate__animated animate__zoomIn animate__slow">
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold bebas-font">
+                                <span class="green-text">Be the Penguins</span>
+                                <br />
+                                of Winter
+                            </h1>
+                            <p class="w-96 max-w-full mt-3 mb-5">
+                                We sell quality products and it is our commitment to out valuable customers
+                            </p>
+                            <button class="green-bg text-white font-bold text-sm sm:text-base px-4 py-3 sm:px-5 hover:bg-yellow-500 hover:text-gray-50 rounded flex items-center space-x-2">
+                                <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                <span>BUY NOW</span>
+                            </button>
+                        </div>
+                        <!-- banner image part -->
+                        <div>
+                            <img src="./images/model.png" alt="Model" class="mx-auto lg:ml-auto lg:mr-0 animate__animated animate__zoomIn animate__slow" />
+                        </div>
+                    </div>
+                </section>
+                <!-- Banner Ends -->
+            </div>
+        </header>
+        <!-- Header Ends -->
 
-      <!-- icons -->
-      <link rel="icon" href="./images/icons/favicon.png">
+        <!-- Main starts -->
+        <main>
+           <!-- Casual shoe Starts -->
+           <section id="casual-shoe" class="casual-shoe py-10">
+            <div class="container mx-auto px-5">
+                <h2 class="animate__animated animate__backInLeft animate__slower text-3xl green-text font-bold bebas-font uppercase">
+                    Casual Shoe
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                  <!-- Product Card -->
+                    <div class="p-4 penguin-shadow rounded-2xl">
+                        <div class="bg-gray-200 rounded-xl">
+                            <img src="./images/cshoe-1.png" alt="shoe" class="h-64 mx-auto p-5" />
+                        </div>
+                        <div class="mt-3">
+                            <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                               Nike Casual Shoe
+                            </h4>
+                            <p class="mt-2">
+                                We collected this trending jacket from renowned garment and selling you for a better look
+                            </p>
+                            <div class="flex justify-between items-center mt-5">
+                                <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                    $80
+                                </h2>
+                                <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                    <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <span>BUY NOW</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="p-4 penguin-shadow rounded-2xl">
+                        <div class="bg-gray-200 rounded-xl">
+                            <img src="./images/cshoe-2.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                        </div>
+                        <div class="mt-3">
+                            <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                Nike Casual Shoe
+                            </h4>
+                            <p class="mt-2">
+                              We collected this trending jacket from renowned garment and selling you for a better look
+                            </p>
+                
+                            <div class="flex justify-between items-center mt-5">
+           
+                                <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                    $124
+                                </h2>
+                   
+                                <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                    <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <span>BUY NOW</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product card -->
+                    <div class="p-4 penguin-shadow rounded-2xl">
+                        <div class="bg-gray-200 rounded-xl">
+                            <img src="./images/cshoe-3.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                        </div>
+                        <div class="mt-3">
+                            <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                Nike Casual Shoe
+                            </h4>
+                            <p class="mt-2">
+                              We collected this trending jacket from renowned garment and selling you for a better look
+                            </p>
+                            <div class="flex justify-between items-center mt-5">
+                                <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                    $200
+                                </h2>
+                      
+                                <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                    <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <span>BUY NOW</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Casual shoe ends -->
 
-      <!-- Font awesome -->
-      <script src="https://kit.fontawesome.com/999412a9e6.js" crossorigin="anonymous"></script>
 
-      <!-- animate css -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-      <!-- tailwind css cdn -->
-      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
-
-      <!-- Main css -->
-      <link rel="stylesheet" href="./css/style.css">
-
-      <title>Penguin Fasion: Build yourself beautifully</title>
-   </head>
-   <body>
-       <!-- Header starts -->
-         <header id="header" class="header">
-             <!-- Navbar starts -->
-               
-             <!-- Navbar ends -->
-         </header>
-       <!-- Header ends -->
-
-       <!-- Main starts -->
+        <!-- Formal shoe Starts -->
+        <section id="formal-shoe" class="formal-shoe py-10">
+          <div class="container mx-auto px-5">
+              <h2 class="animate__animated animate__backInLeft animate__slower text-3xl green-text font-bold bebas-font uppercase">
+                Formal Shoe
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                <!-- Product Card -->
+                  <div class="p-4 penguin-shadow rounded-2xl">
+                      <div class="bg-gray-200 rounded-xl">
+                          <img src="./images/shoe-1.png" alt="shoe" class="h-64 mx-auto p-5" />
+                      </div>
+                      <div class="mt-3">
+                          <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                             Adidas Formal Shoe
+                          </h4>
+                          <p class="mt-2">
+                              We collected this trending jacket from renowned garment and selling you for a better look
+                          </p>
+                          <div class="flex justify-between items-center mt-5">
+                              <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                  $480
+                              </h2>
+                              <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                  <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                  <span>BUY NOW</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Product Card -->
+                  <div class="p-4 penguin-shadow rounded-2xl">
+                      <div class="bg-gray-200 rounded-xl">
+                          <img src="./images/shoe-2.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                      </div>
+                      <div class="mt-3">
+                          <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                            Adidas Formal Shoe
+                          </h4>
+                          <p class="mt-2">
+                            We collected this trending jacket from renowned garment and selling you for a better look
+                          </p>
+              
+                          <div class="flex justify-between items-center mt-5">
          
-       <!-- Main ends -->
+                              <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                  $624
+                              </h2>
+                 
+                              <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                  <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                  <span>BUY NOW</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- product card -->
+                  <div class="p-4 penguin-shadow rounded-2xl">
+                      <div class="bg-gray-200 rounded-xl">
+                          <img src="./images/shoe-3.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                      </div>
+                      <div class="mt-3">
+                          <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                            Adidas Formal Shoe
+                          </h4>
+                          <p class="mt-2">
+                            We collected this trending jacket from renowned garment and selling you for a better look
+                          </p>
+                          <div class="flex justify-between items-center mt-5">
+                              <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                  $800
+                              </h2>
+                    
+                              <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                  <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                  <span>BUY NOW</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Casual shoe ends -->
 
 
-       <!-- footer starts -->
-       <!-- footer ends -->
-   </body>
+
+            <!-- Woman Jacket Starts -->
+            <section id="women-jacket" class=" women-jacket py-10">
+                <div class="container mx-auto px-5">
+                    <h2 class="animate__animated animate__backInLeft animate__slower text-3xl green-text font-bold bebas-font uppercase">
+                        Woman Jacket
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                      <!-- Product Card -->
+                        <div class="p-4 penguin-shadow rounded-2xl">
+                            <div class="bg-gray-200 rounded-xl">
+                                <img src="./images/jacket-1.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                    Yellow Coat Jacket
+                                </h4>
+                                <p class="mt-2">
+                                    We collected this trending jacket from renowned garment and selling you for a better look
+                                </p>
+                                <div class="flex justify-between items-center mt-5">
+                                    <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                        $300
+                                    </h2>
+                                    <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                        <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                        <span>BUY NOW</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product Card -->
+                        <div class="p-4 penguin-shadow rounded-2xl">
+                            <div class="bg-gray-200 rounded-xl">
+                                <img src="./images/jacket-2.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                    Ladies Yellow Jacket
+                                </h4>
+                                <p class="mt-2">
+                                  We collected this trending jacket from renowned garment and selling you for a better look
+                                </p>
+                    
+                                <div class="flex justify-between items-center mt-5">
+               
+                                    <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                        $154
+                                    </h2>
+                       
+                                    <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                        <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                        <span>BUY NOW</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product card -->
+                        <div class="p-4 penguin-shadow rounded-2xl">
+                            <div class="bg-gray-200 rounded-xl">
+                                <img src="./images/jacket-3.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                    Woman Red Jacket
+                                </h4>
+                                <p class="mt-2">
+                                  We collected this trending jacket from renowned garment and selling you for a better look
+                                </p>
+                                <div class="flex justify-between items-center mt-5">
+                                    <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                        $400
+                                    </h2>
+                          
+                                    <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                        <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                        <span>BUY NOW</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Woman Jacket ends -->
+
+
+            <!-- Man Jacket Starts -->
+            <section id="man-jacket" class="man-jacket py-10">
+              <div class="container mx-auto px-5">
+                  <h2 class="animate__animated animate__backInLeft animate__slower text-3xl green-text font-bold bebas-font uppercase">
+                      Man Jacket
+                  </h2>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+                    <!-- Product Card -->
+                      <div class="p-4 penguin-shadow rounded-2xl">
+                          <div class="bg-gray-200 rounded-xl">
+                              <img src="./images/jacket-4.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                          </div>
+                          <div class="mt-3">
+                              <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                  Gray Yellow Jacket
+                              </h4>
+                              <p class="mt-2">
+                                  We collected this trending jacket from renowned garment and selling you for a better look
+                              </p>
+                              <div class="flex justify-between items-center mt-5">
+                                  <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                      $600
+                                  </h2>
+                                  <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                      <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                      <span>BUY NOW</span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Product Card -->
+                      <div class="p-4 penguin-shadow rounded-2xl">
+                          <div class="bg-gray-200 rounded-xl">
+                              <img src="./images/jacket-5.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                          </div>
+                          <div class="mt-3">
+                              <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                  Kolija Fresh Jacket
+                              </h4>
+                              <p class="mt-2">
+                                We collected this trending jacket from renowned garment and selling you for a better look
+                              </p>
+                  
+                              <div class="flex justify-between items-center mt-5">
+             
+                                  <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                      $454
+                                  </h2>
+                     
+                                  <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                      <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                      <span>BUY NOW</span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- product card -->
+                      <div class="p-4 penguin-shadow rounded-2xl">
+                          <div class="bg-gray-200 rounded-xl">
+                              <img src="./images/jacket-3.png" alt="Jacket" class="h-64 mx-auto p-5" />
+                          </div>
+                          <div class="mt-3">
+                              <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                  Gray Black Jacket
+                              </h4>
+                              <p class="mt-2">
+                                We collected this trending jacket from renowned garment and selling you for a better look
+                              </p>
+                              <div class="flex justify-between items-center mt-5">
+                                  <h2 class="text-3xl sm:text-4xl font-bold green-text bebas-font leading-none">
+                                      $700
+                                  </h2>
+                        
+                                  <button class="green-bg text-white font-medium text-sm sm:text-base py-3 px-3 sm:px-5  hover:bg-yellow-500 rounded flex items-center space-x-2">
+                                      <img src="./images/icons/shopping-cart 1.png" alt="Shopping Cart" class="w-5 sm:w-6 h-5 sm:h-6" />
+                                      <span>BUY NOW</span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- Man Jacket ends -->
+
+
+            <!-- Features Starts -->
+            <section id="features" class="features py-10">
+                <div class="container mx-auto px-5">
+                    <h2 class="text-3xl green-text font-bold bebas-font uppercase lg:mt-8 lg:mb-5">
+                        Features
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mt-5 lg:mt-0">
+                        <div class="lg:col-span-5">
+                            <div class="space-y-5">
+                                <!-- Single Feature -->
+                                <div class="md:flex items-center space-y-3 md:space-y-0 md:space-x-5 penguin-shadow rounded-xl p-6">
+                                
+                                    <div class="w-16">
+                                        <img src="./images/icons/image 12.png" alt="feature" />
+                                    </div>
+                        
+                                    <div>
+                                        <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                            Find the Perfect Fit
+                                        </h4>
+                                        <p class="mt-2">
+                                            Everybody is different, which is why we offer styles for every body.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Single Feature -->
+                                <div class="md:flex items-center space-y-3 md:space-y-0 md:space-x-5 penguin-shadow rounded-xl p-6">
+                        
+                                    <div class="w-16">
+                                        <img src="./images/icons/image 12.png" alt="feature" />
+                                    </div>
+                          
+                                    <div>
+                                        <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                            Free Exchanges
+                                        </h4>
+                                        <p class="mt-2">
+                                            One of the many reasons you can shop with peace of mind.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Single Feature -->
+                                <div class="md:flex items-center space-y-3 md:space-y-0 md:space-x-5 penguin-shadow rounded-xl p-6">
+                           
+                                    <div class="w-16">
+                                        <img src="./images/icons/image 12.png" alt="feature" />
+                                    </div>
+                       
+                                    <div>
+                                        <h4 class="text-xl sm:text-2xl text-gray-900 font-bold">
+                                            Contact Our Seller
+                                        </h4>
+                                        <p class="mt-2">
+                                            They are here to help you. That's quite literally what we pay them for.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- feature image -->
+                        <div class="lg:col-span-7">
+                            <img src="./images/shopping.png" alt="Shopping" class="mx-auto lg:ml-auto lg:mr-0" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Features Ends -->
+
+
+            <!-- Contact Starts-->
+            <section id="contact-area" class="py-10 sm:py-16">
+                <div class="container mx-auto px-5">
+                    <div class="flex flex-col text-center w-full mb-12">
+                        <h2 class="text-3xl text-gray-900 font-bold bebas-font uppercase">
+                            Contact Us
+                        </h2>
+                        <p class="md:w-1/2 mx-auto leading-relaxed text-base">
+                          Please send us a message and we will get back to you as soon as possible.
+                          And thank you for taking the time to contact us
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                        <form class="flex flex-wrap -m-2">
+                            <div class="p-2 w-1/2">
+                                <div class="relative">
+                                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    />
+                                </div>
+                            </div>
+                            <div class="p-2 w-1/2">
+                                <div class="relative">
+                                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    />
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                                <div class="relative">
+                                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                                <button class="block w-full text-center text-white green-bg border-0 py-2 px-8  hover:bg-yellow-500 rounded text-lg">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Ends -->
+        </main>
+        <!-- Main Ends -->
+
+
+        <!-- Footer Starts -->
+        <footer id="footer-area" class="py-5">
+            <div class="container mx-auto px-5">
+                <p class="text-center">
+                    &copy; 2022 | all rights reserved by
+                    <a href="https://babulakter.com" target="_blank" class="green-text hover:text-yellow-500">Babul</a>
+                </p>
+            </div>
+        </footer>
+        <!-- Footer Ends -->
+    </body>
 </html>
